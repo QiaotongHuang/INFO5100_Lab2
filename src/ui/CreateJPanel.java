@@ -31,8 +31,7 @@ public class CreateJPanel extends javax.swing.JPanel {
      */
     private Employee employee;
     private EmployeeList employeeList;
-    public CreateJPanel(Employee employee, EmployeeList employeeList) {
-        this.employee = employee;
+    public CreateJPanel(EmployeeList employeeList) {
         this.employeeList = employeeList;
         initComponents();
         Chooser DOBChooser = Chooser.getInstance();
@@ -345,6 +344,8 @@ public class CreateJPanel extends javax.swing.JPanel {
 
     private void SavejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SavejButtonActionPerformed
         // TODO add your handling code here:
+        Employee employee = new Employee(); 
+        this.employee = employee;
         employee.setName(Text_Name.getText());
         employee.setEmployeeID(Text_Employee_ID.getText());
         try{

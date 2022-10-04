@@ -4,12 +4,11 @@
  */
 package ui;
 
-import model.Employee;
 import model.EmployeeList;
 
 /**
  *
- * @author frank
+ * @author qiaotong
  */
 public class MainJFrame extends javax.swing.JFrame {
 
@@ -109,8 +108,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void CreateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateButtonActionPerformed
         // TODO add your handling code here:
-        Employee employee = new Employee();
-        CreateJPanel createJPanel = new CreateJPanel(employee,employeeList);
+        CreateJPanel createJPanel = new CreateJPanel(employeeList);
         jSplitPane1.setRightComponent(createJPanel);
     }//GEN-LAST:event_CreateButtonActionPerformed
 
